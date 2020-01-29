@@ -1,0 +1,32 @@
+def mini():
+    per_km=8
+    total_price=per_km*distance
+    print("cost for mini: ",total_price)
+    
+def macro():
+    per_km=10
+    total_price=per_km*distance
+    print("cost for macro: ",total_price)
+    
+def premium():
+    per_km=15
+    total_price=per_km*distance
+    print("cost for premium: ",total_price)
+    
+print("---------->BILLING<------------")
+source=input("|enter the source:  ")
+
+dest=input("|enter the destination:  ")
+
+distance=int(input("|enter the distance:  "))
+
+type_serv=input("|enter thr type of service(mini,macro,premium): ")
+
+if(type_serv=="mini"):
+    mini()
+    
+elif(type_serv=="macro"):
+    macro()
+    
+elif(type_serv=="premium"):
+    premium()
