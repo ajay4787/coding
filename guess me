@@ -1,0 +1,9 @@
+import random
+
+for i in range(0,3):
+    usr_num=int(input("your guess"))
+    if(random.randint(0,3)==usr_num):
+        print("well done...")
+    else:
+        print("try again")
+        
