@@ -1,0 +1,48 @@
+
+import random
+print(" rules:\n"
+              +"rock vs paper->paper wins\n"
+              +"paper vs scissors->scissors wins\n"
+               +"scissors vs rock-> rock wins")
+              
+
+
+
+while(1):
+    choice=int(input("enter the choice 1.rock 2.paper 3.scisorrs\n"))
+
+
+    if(choice==1):
+        user_choice="rock"
+        
+    elif(choice==2):
+        user_choice="paper"
+        
+    elif(choice==2):
+        user_choice="rock"
+
+    print("user choice is: " + user_choice) 
+    print("\nNow its computer turn.......")     
+
+    choice_c=random.randint(1,3)
+
+    
+    if(choice_c==1):
+        comp_choice="rock"
+        
+    elif(choice_c==2):
+        comp_choice="paper"
+        
+    elif(choice_c==2):
+        comp_choice="scissor"
+
+    print("computer  choice is: " + comp_choice)
+
+    if(user_choice==comp_choice):
+        print("match draw....no points")
+    elif(user_choice=="rock" and comp_choice=="scissor"):
+        print("user wins")
+    elif(user_choice=="scissor" and comp_choice=="paper"):
+        print("user wins")
+    else:
+        print("computer wins")
